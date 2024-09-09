@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js function</title>
+
+<script>
+    function fullName(fname,lname){
+        document.write('hello' + fname + lname);        
+    };
+    fullName('kartavya','moradiya');
+
+
+
+//return
+
+    document.write('Total sub -5 <br> Total marks 500 <br> <br>');
+    function sumMark(hindi,eng,chemistry, math ,physics){
+        var a = hindi+eng+chemistry+math+physics;
+        return a;
+    };
+    var b = sumMark(50,50,50,80,80);
+    document.write(b)
+    
+    function multiMark(num){
+        var a = num * num;
+        return a;
+    };
+    const squre = function(num){
+        return num*num;
+    }
+    console.log('squre', typeof squre);
+    console.log(squre(4));
+    console.log(multiMark(4));
+</script>
+</head>
+<body>
+    <h2>kartavya moradiya</h2>
+    <h4>kano patel</h4>
+    <p id="info"></p>
+    <script src="nestedfunctions.js"></script>
+</body>
+</html>
