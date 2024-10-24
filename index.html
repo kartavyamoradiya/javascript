@@ -1,128 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset   ="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header with javascript ajax</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js object exercise</title>
 </head>
-<style>
-    input{
-        width: 50%;
-        margin-bottom: 20px;
-        padding: 5px 10px;
-    }
-    button{
-        padding: 20px 20px;
-    }
-</style>
-<body style="overflow-x: hidden;">
-    <header>
-        <ul id="demo" style="display: flex; color: white;
-         background-color: black; justify-content: space-between;">
-        </ul>
-    </header>
-    <div class="main_banner">
-        <div>
-            <h1 id="heading"style="text-align:center;"></h1>
-        </div>
-        <img id="img" style="width: 100%;">
-    </div>
-    <div class="content">
-        <h2 id="welcome"style="text-align: center; font-weight: bold;font-size: 34px;"></h2>
-        <p id="pre"style="text-align:center;"></p>
-        <p id="Pre"style="text-align:center;"></p>
-    </div>
-    <div class="middale_content">
-        <img id="image" style="width: 100%;">
-    </div>
-    <div class="gallary_item">
-        <div id="GAllary" style="text-align: center;font-size: 25px;"></div>
-        <div class="row">
-            <div class="col-6" style="padding-top: 20px;">
-                <img id="Room" style="width:100%;">
-                <h4 id="Kitchens" style="text-align: center;margin: 7px;"></h4>
-            </div>
-            <div class="col-6" style="padding-top: 20px;">
-                <img id="Bathroom" style="width: 100%;">
-                <h4 id="bathtab" style="text-align: center;margin: 7px;"></h4>
-            </div>
-            <div class="col-6" style="padding-top: 20px;">
-                <img id="Kitchen" style="width: 100%;">
-                <h4 id="terrace" style="text-align: center; margin: 7px;"></h4>
-            </div>
-            <div class="col-6" style="padding-top: 20px;">
-                <img id="Bedroom"style="width:100%;">
-                <h4 id="bedsroom" style="text-align: center;margin: 7px;"></h4>
-            </div>
-        </div>
-    </div>
-    <div class="ammenities">
-        <h1 id="ammenities" style="text-align: center;color: #3E3E42;margin-bottom: 30px;"></h1>
-        <div class="row image_text">
-            <div class="col-6">
-                <img id="photo" style="width: 100%;">
-            </div>
-            <div class="col-6">
-                <h3 id="Amenities" style="text-align: center; color: #3E3E42; margin-bottom: 40px;"></h3>
-                <ul class="main-icon">
-                    <li style="margin-top: 0; margin-bottom: 10px; padding: 16px 0;display: flex;
-                    border-bottom: 1px solid #f1f1f1;">
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"><i class="fa-solid fa-tree"></i>Nature</span>
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"><i class="fa-solid fa-bomb"></i>Grill</span>
-                    </li>
-                    <li style="margin-top: 0; margin-bottom: 10px; padding: 16px 0;display: flex;
-                    border-bottom: 1px solid #f1f1f1;">
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"><i class="fa-solid fa-cloud"></i>luxury bath</span>
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"><i class="fa-solid fa-dollar-sign"></i>Sauna</span>
-                    </li>
-                    <li style="margin-top: 0; margin-bottom: 10px; padding: 16px 0;display: flex;
-                    border-bottom: 1px solid #f1f1f1;">
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"><i class="fa-solid fa-fire"></i>fireplace</span>
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"><i class="fa-solid fa-futbol"></i> Washer/Dryer </span>
-                    </li>
-                    <li style="margin-top: 0; margin-bottom: 10px; padding: 16px 0;display: flex;
-                    border-bottom: 1px solid #f1f1f1;">
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"><i class="fa-solid fa-users"></i>no crows</span>
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"><i class="fa-regular fa-circle-play"></i> Front Sun Terrace </span>
-                    </li>
-                    <li style="margin-top: 0; margin-bottom: 10px; padding: 16px 0;display: flex;
-                    border-bottom: 1px solid #f1f1f1;">
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"> <i class="fa-solid fa-wifi"></i> free internet</span>
-                        <span style="width: 50%;display:flex;color: #3E3E42;gap: 10px;align-items: center;"><i class="fa-solid fa-gamepad"></i>gas stove</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="middleimg">
-        <img id="table" style="width: 100%; padding-top: 20px;margin-bottom: 20px;">
-    </div>
-    <div class="content">
-        <h1 id="HeadinG" style="font-size: 50px;color: #3E3E42; text-align: center;margin-bottom: 20px;"></h1>
-    </div>
-    <div class="form" style="text-align: center;">
-        <form>
-            <div class="form-group namefield">
-                <input type="name"id="name"placeholder="FIRST NAME">
-            </div>
-            <div class="form-group">
-                <input type="text"id="EmailAddress" placeholder="LAST NAME">
-            </div>
-            <div class="form-group">
-                <input type="text"id="EmailAddress" placeholder="EMAIL">
-            </div>
-            <div class="form-group">
-                <input type="text"id="MESSAGE" placeholder="MESSAGE">
-            </div>	
-            <div class="btn-field">
-                <button onclick="">CONTACT US</button>
-                <div id="Done"></div>
-            </div>
-        </form>
-    </div>
-    <script src="js/script.js"></script>
+<body>
+	<h2>yash palaning holliday</h2>
+	<p id="name"></p>
+	<p id="leavedate"></p>
+	<P id="person"></P>
+	<p id="adrees"></p>
+	<p id="kano"></p>
+	<P id="key"></P>
+	<script src="script.js"></script>
 </body>
 </html>
-<!--http://192.168.1.122/magesture-dev/index.php/wp-json/wp/v2/menu-->
