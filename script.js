@@ -1,61 +1,24 @@
-function leave() {
-	var name="leave in 30,31,1,2";
-	document.getElementById('leavedate').innerHTML=name;
-}
-leave();
-function intro(){
-	var firstname ="yash,"
-	var lastname ="kulkarni,"
-	var age="23"
-	var sum =firstname+""+lastname+""+"that is"+age;
-	document.getElementById('name').innerHTML=sum;
-}
-intro();
-
-let bus={
-	firstName:'gsrtc'
-};
-console.log(bus.firstName);	
-
-const person ={
-	firstName:"yash",
-	lastName:"kulkarni",
-	fullName:function(){
-		return this.firstName+ ""+this.lastName;
-	}
-};
-document.getElementById('person').innerHTML=person.fullName();
-
-/*function Adrees(adrees){
-	this.vilName=first;
-	this.disName=last;
-	this.talName=third;
-}
-const myAdrees= new Adrees("bela","amaran","morbi");
-document.getElementById('adrees').innerHTML="village is"+myAdrees.first+"dis is"
-+myAdrees.last+"tako is"+myAdrees.third+".";*/
-
-/*let person2={
-	firstName:"kano",
-	lastName:"patel",
-	Hobby:["playing criket","photography","treaking"]
-	Living:{
-		City:"ahedabad"
-		Ariya:"iskone croos road "
-	};	
-	myFunction:function(){
-		return this.firstName+""+this.lastName+""+this.Hobby+""+this.Living;
-	}
-};*/
-//document.getElementById('kano').innerHTML=person2.myFunction();
-let person3={
-	firstName:"umesh",
-	lastName:"mangukiya"
-};
-for (let key in person3){console.log
-(key);};
-for (let key in person3){
-	console.log(key +':'+person3[key]);
-}
-document.getElementById('key').innerHTML=(person3[key]);
-
+ /*var name="Testname";
+ document.getElementById('name').innerHTML=name;
+ var lastname="Lastname";
+ document.getElementById('l-name').innerHTML=lastname;
+ var mobileNumber=1234567890;
+ document.getElementById('mobile-no').innerHTML=mobileNumber;
+ var birth="01-01-1990";
+ document.getElementById('birth-date').innerHTML=birth;
+ var Address="12/3 Address line, Makarba - 380051, Ahmedabad";
+ document.getElementById('address').innerHTML=Address;*/
+var data = [
+			'Testname',
+			'Lastname',
+			'1234567890',
+			'01-01-1990',
+			'12/3 Address line, Makarba - 380051, Ahmedabad'
+		];
+<tr>
+					<td id="name"></td>
+					<td id="l-name"></td>
+					<td id="mobile-no"></td>
+					<td id="birth-date"></td>
+					<td id="address"></td>
+				</tr>

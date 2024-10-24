@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array data print</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="customer-wrapper">
+		<table id="customer-info" border="1">
+			<thead id="customer-thead">
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Phone number</th>
+					<th>Date of birth</th>
+					<th>Address</th>
+				</tr>
+			</thead>
+			<tbody id="customer-tbody">
+			</tbody>
+		</table>
+	</div>
+	<div id="name"></div>
+	<div id="buton"></div>
+	<div id="myDiv" onmouseover="this.innerHTML+= 'KARTAVYA';" style="padding: 50px; background-color: violet;"></div>
+	<button onclick="Mouse()">click me</button>
+	<div id="eve" onmouseover="this.innerHTML+='umesh';"style="padding: 50px; background-color:palevioletred;">
+	</div>
+	<h1></h1>
+	<script type="text/javascript">
+		var data = [
+			{
+				fname:'Testname',
+				lname:'Lastname',
+				phone:'1234567890',
+				dob:'01-01-1990',
+				address:'12/3 Address line, Makarba - 380051, Ahmedabad'
+			},
+			{
+				fname:'Testname',
+				lname:'Lastname',
+				phone:'1234567890',
+				dob:'01-01-1990',
+				address:'12/3 Address line, Makarba - 380051, Ahmedabad'
+			},
+			{
+				fname:'Testname',
+				lname:'Lastname',
+				phone:'1234567890',
+				dob:'01-01-1990',
+				address:'12/3 Address line, Makarba - 380051, Ahmedabad'
+			}
+		];
+		//console.log(data);
+		//var html = '';
+		//console.log(data)
+		var tbody = document.getElementById('customer-tbody');
+		for (i=0; i<data.length; i++) {
+			console.log(i, data[i])
+
+			let tr = document.createElement("tr");
+			tbody.appendChild(tr)
+			
+			/*for (index in data[i]) {
+				var td = document.createElement("td");
+				td.innerHTML = data[i][index]
+				tr.appendChild(td)
+			}*/
+
+			var td = document.createElement("td");
+			td.innerHTML = data[i].fname
+			console.log(td);
+			tr.appendChild(td)
+
+			var td = document.createElement("td");
+			td.innerHTML = data[i].lname
+			tr.appendChild(td)
+
+			var td = document.createElement("td");
+			td.innerHTML = data[i].phone
+			tr.appendChild(td)
+
+			var td = document.createElement("td");
+			td.innerHTML = data[i].dob
+			tr.appendChild(td)
+
+			var td = document.createElement("td");
+			td.innerHTML = data[i].address
+			tr.appendChild(td)
+			};
+
+			var deta=[{
+				firstname:'KARTAVYA MORADIYA',
+				mobileNumber:'855787474'
+			}];
+			var fullName= document.getElementById('name');
+			for (i=0; i<deta.length; i++) {
+			console.log(i, deta[i])
+			var  h1= document.createElement("h1");
+			h1.innerHTML = deta[i].firstname
+			console.log(fullName)
+			fullName.appendChild(h1)
+			var  h1= document.createElement("h1");
+			h1.innerHTML = deta[i].mobileNumber
+			console.log(fullName)
+			fullName.appendChild(h1)
+		};
+		var btnn=document.getElementById('buton')
+		var button=document.createElement('button')
+		button.innerHTML="hello dosto";
+		buton.appendChild(button);
+
+		function Mouse(){
+			const ev = document.createEvent("MouseEvent");
+			ev.initMouseEvent("mouseover", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+
+ 			 document.getElementById("myDiv").dispatchEvent(ev);
+
+		}
+		let Event=document.createElement("mouseover");
+		//Event.initMouseEvent("mouseover",true,true,window,0,0,0,0,0,false,false,false,false,0,null);
+		//document.getElementById('eve').dispatchEvent(Event);
+		let  naMe= document.createTextNode("hello wold");
+		document.body.appendChild(naMe);
+
+		const h2 = document.createElement("h2");
+		const textNode = document.createTextNode("Hello umesh");
+		h2.appendChild(textNode);
+		document.body.appendChild(h2);
+	</script>
+</body>
+</html>
