@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOYO BURGER</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/yoyo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+		<nav class="navbar navbar-expand-lg">
+			<div class="site-logo">
+                <a href="#"><img src="img/logo.png"></a>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarScroll">
+				<div class="left-menu">
+					<ul class="navbar-nav">
+					    <li class="nav-item">
+					      <a class="nav-link active" href="burger.html">Burger</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="#"><button onclick="Alert()">French Fries</button></a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="sandwich.html">Sandwich</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="#"><button onclick="Alert()">Cold Drink</button></a>
+					    </li>
+					 </ul>
+				</div>
+				<div class="right-contact-menu">
+				  	<ul class="navbar-nav">
+				  		<li class="nav-item"><a href="#" class="nav-link"><button onclick="contact()">Contacts</button></a></li>
+				  	</ul>
+					</div>
+				</div>
+		</nav>
+	</header>
+    <div class="main-slider-banner">
+		<div class="slider-image">
+			<img src="img/potatoes-fries-coke-ice-wallpaper-preview.jpg">
+        </div>	
+	</div>
+    <div class="page-content">
+        <div class=	page-details>
+		    <div class="page-heading">
+			    <h1>yoyo burger</h1>
+		    </div>
+            <div class="slogen">
+                <p>Taste the freshness in every bite!</p>
+                <p>Juicy, charred perfection—your burger cravings satisfied!</p>
+                <p>Where every burger is a flavor adventure!</p>
+                <p>Bite into bliss—our burgers are a celebration of flavor!</p>
+            </div>
+        </div>       
+    </div>
+    <div class="img-menu-slider">
+        <div class="container">
+            <div class="row">
+                <div class="img-menu">
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="img/BURGER.jpg">
+                        <h2>Veggie Burger</h2>
+                        <p class="small-size"> Description:- A mix of various vegetables, grains, and legumes, often with added spices.</p>
+                        <p class="hover-font">Price:-99</p>
+                        <button class="show-alert-button" onclick="Load()"><p class="hover-font"><i class="fa-solid fa-cart-shopping"></i>Order</p></button>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="img/240_F_561786951_IdQbtR0bga3RzISgodGvIRMFEBqmjfcn.jpg">
+                        <h2>Lentil Burger</h2>
+                        <p class="small-size">Description:-Made with lentils, often mixed with vegetables and spices for flavor.</p>
+                        <p class="hover-font">Price:-120</p>
+                        <button class="show-alert-button" onclick="Load()"><p class="hover-font"><i class="fa-solid fa-cart-shopping"></i>Order</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-slider-banner">
+		<div class="slider-image no-space">
+			<img src="img/sandwich3.jpg">
+        </div>
+        <div class="slogen">
+            <p class="space-text"> Ek bite, khushiyon ka jashn,
+                Sandwich se milta hai har manzar ka rang.</p>
+        </div>	
+	</div>
+    <div class="img-menu-slider">
+        <div class="container">
+            <div class="row">
+                <div class="img-slider">
+                    <div class="img-menu">
+                        <div class="col-lg-6 col-sm-12">
+                            <img src="img/images (1).jpeg">
+                            <h2>Caprese Classic</h2>
+                            <p class="small-size"> is a simple yet elegant sandwich inspired by the traditional Italian salad. It features layers of fresh, ripe mozzarella and juicy tomatoes, sliced thick and arranged beautifully on your choice of crusty Italian bread or a baguette. 
+                            </p>
+                            <p class="hover-font">Price:-140</p>
+                           <button class="show-alert-button" onclick="Load()"><p class="hover-font"><i class="fa-solid fa-cart-shopping"></i>Order</p></button>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <img src="img/images.jpeg">
+                            <h2>Veggie Wonderland
+                            </h2>
+                            <p class="small-size"> is a colorful and flavorful vegetarian sandwich that celebrates the freshness of garden vegetables. This delightful creation starts with hearty whole grain or multigrain bread, providing a nutty base.</p>
+                            <p class="hover-font">Price:-80</p>
+                            <button class="show-alert-button" onclick="Load()"><p class="hover-font"><i class="fa-solid fa-cart-shopping"></i>Order</p></button>                          
+                        </div>
+                    </div>
+                    <div class="img-menu">
+                        <div class="col-lg-6 col-sm-12">
+                            <img src="img/sandwich22.jpg">
+                            <h2>Hummus Haven</h2>
+                            <p class="small-size">is a delightful vegetarian sandwich that highlights the creamy goodness of hummus as its star ingredient. It features a generous spread of classic or flavored hummus on fresh, soft pita bread or whole grain bread</p>
+                            <p class="hover-font">Price:-299(Offer)</p>
+                            <button class="show-alert-button" onclick="Load()"><p class="hover-font"><i class="fa-solid fa-cart-shopping"></i>Order</p></button>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <img src="img/download (1).jpeg">
+                            <h2>Garden Griller</h2>
+                            <p class="small-size"> is a vibrant vegetarian sandwich packed with fresh, grilled vegetables. Imagine layers of zucchini, bell peppers, and eggplant, lightly brushed with olive oil and seasoned with herbs, all grilled to perfection.</p>
+                            <p class="hover-font">Price:-299(Offer)</p>
+                            <button class="show-alert-button" onclick="Load()"><p class="hover-font"><i class="fa-solid fa-cart-shopping"></i>Order</p></button>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarScroll">
+				<div class="left-menu space-remove">
+					<ul class="navbar-nav space-item">
+					    <li class="nav-item">
+					      <a class="nav-link active" href="#"><i class="fa-solid fa-house-chimney"></i></a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="#"><button class="show-alert-button" onclick="confirm()"><i class="fa-solid fa-cart-shopping"></i></button></a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+					    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-location-dot"></i></a>
+                          </li>
+					 </ul>
+				</div>
+				<div class="right-contact-menu">
+				  	<ul class="navbar-nav space-item">
+				  		<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
+				  	</ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/yoyo.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('.img-slider').slick({
+            arrows:false,
+            infinite: true,
+            autoplay: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+			                 
+		});
+        });
+    </script>
+</body>
+</html>

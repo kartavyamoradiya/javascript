@@ -1,0 +1,203 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+img {
+    max-width: 100%;
+}
+.main-header{
+    position:fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 9;
+}
+.main-header .navbar {
+    padding:0 15px 15px 15px;
+}
+.main-header .site-logo {
+    max-width: 100%;
+    width: 10%;
+}
+.left-menu {
+    position: absolute;
+    right: 25%;
+}
+.right-contact-menu {
+    position: absolute;
+    right: 15px;
+}
+.navbar-nav a {
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin: 0 70px;
+}
+.slider-image img{
+    width: 100%;
+    margin-top: 128px;
+}
+.page-details {
+    position: relative;
+    margin-top: -88px;
+    margin-left: 20px;
+}
+.page-details .page-heading h1 {
+    font-size: 90px;
+    line-height: 110px;
+    color: #22aa89;
+    text-transform: uppercase;
+}
+.img-menu-slider {
+    margin-top: 30px;
+}
+.img-menu{
+    display:flex !important;
+}
+.img-menu img {
+    width: 100%;
+}
+.col-lg-6.col-sm-12 {
+    padding: 20px;
+}
+.slogen {
+    color: white;
+    font-size: 35px;
+    line-height: 55px;
+}
+.img-menu h2 {
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+p.small-size {
+    font-size: 20px !important;
+    font-weight: normal;
+}
+.no-space {
+    margin-top: -50px;
+}
+.slogen p {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: lightsalmon;
+}
+.img-menu p {
+    color: white;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+.hover-font:hover{
+    color: darkred;
+}
+ul.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+.slick-dots li {
+    position: relative;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+}
+.slick-dots li button:before {
+    font-size: .6rem;
+    color:lime;
+    width: 100%;
+    font-size: 25px;
+}
+.slick-dots li.slick-active, .slick-dots li:hover {
+    border: 2px solid white;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.slick-dots li.slick-active button:before, .slick-dots li button:hover:before{
+    color:lime;
+}
+slick-dots li button, .slick-dots li.slick-active button:before, .slick-dots li button:hover:before, .slick-dots li.slick-active, .slick-dots li:hover {
+    opacity: 0.7 !important;
+    transition: all 0.3s;
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.space-text{
+    padding:30px 0;
+}
+.space-remove {
+    right: 17%;
+}
+footer {
+    padding-top: 8%;
+}
+.space-item a {
+    font-size: 30px;
+}
+.space-item a:hover{
+    color: darkred;
+}
+.space-item li {
+    padding-left: 240px;
+}
+.space-item {
+    padding: 15px 0;
+}
+.nav-link button {
+    background-color: black;
+    color: white;
+    border-style: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+button {
+    background-color: black;
+    border-style: none;
+}
+button p i {
+    padding: 8px;
+}
+.show-alert-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button i {
+    font-size: 30px;
+}
+.right-contact-menu i {
+    padding-bottom: 11px;
+}
