@@ -1,0 +1,105 @@
+html,body{
+    background-image: url("../Gruppe 10 (1).png");
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+ul#demo{
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+    font-size: 20px;
+}
+li{
+    list-style: none;
+}
+img#img{
+    width: 100%;
+}
+.banner-image{
+    position: relative;
+}
+.heading{
+    color: #AA2228;
+}
+.contant p{
+    font-size: 20px;
+}
+.heading h1{
+    position: absolute;
+    margin-top: -109px;
+    font-size: 125px;
+    line-height: 55px;
+    left: 30px;
+}
+.main_content{
+    color: white;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+.footer{
+    width: 100%;
+        position: relative;
+        padding-top: 110px;
+}
+footer.footer{
+    margin-top: 145px;
+}
+.footer li.nav-item{
+    width: auto;
+    margin-left: 128px;
+}
+a.nav-link{
+    color: white;
+    font-size: 20px;
+}
+.footer .navbar-nav{
+    column-gap: 50px;
+    flex-direction: row;
+}
+.footer-right{
+    display: flex;
+    justify-content: end;
+}
+.footer-right i{
+    color:white;
+    font-size: 25px;
+    padding-left: 20px;
+}
+i:hover{
+    color: darkred;
+}
+.footer .adrees-info{
+    text-align: right;
+}
+.footer .adrees-info p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #707070;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.contact-details{
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    z-index: 0;
+    width: 625px;
+    clip-path: polygon(100% 0%, 100% 100%, 5% 100%, 0 30%);
+    bottom: 0;
+    right: -120 px !important;
+    padding:75px 120px 40px 100px;
+}
+p a{
+    color: #707070;
+}
+@media screen and (max-width:1679px){
+#demo ,.heading ,.main_content ,.footer-info{
+    max-width: 1140px;
+} 
+.heading h1{
+    margin-top: -74px;
+}     
+}
