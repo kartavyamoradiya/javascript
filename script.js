@@ -1,110 +1,95 @@
-let marks=[85,66,78,65,77,65];
-let sum =0;
-for(let val of marks){
-	sum+=val;
+let text="may name is kartavya'my nick name is kano'";
+document.getElementById('demo2').innerHTML=text;
+
+let text1="kartavya";
+let text2="moradiya";
+let text3=text1.concat("",text2);
+document.getElementById('demo3').innerHTML=text3;
+
+function Web() {
+	let text= document.getElementById('demo4').innerHTML;
+	document.getElementById('demo4').innerHTML=
+	text.replace("microsoft","Vs code")
+}
+let ans="it's alright";
+let ans2="he is called yash";
+let ans3="he is called kano";
+document.getElementById('name').innerHTML=ans+"<br>"+ans2+"<br>"+ans3;
+
+
+let text4="asdfghjkl"
+document.getElementById('length').innerHTML=text4.length;
+
+let text5="kartavya is \"learning\" javascript";
+document.getElementById('dubblecoma').innerHTML=text5;
+
+let text6=`The quick
+brown fox
+jumps over
+the lazy dog`;
+document.getElementById('multilinestring').innerHTML=text6;
+ /*let txt="hello word";
+ let x= txt.length;
+ alert (x);*/
+
+const name="kartavya";
+let letter=name.at(2);
+document.getElementById('returnindexelement').innerHTML=letter;
+
+let fruit="apple,banana,kiwi,chiku";
+let part=fruit.slice(6,13);
+document.getElementById('slice').innerHTML=part;
+let fruits="apple,banana,kiwi,chiku";
+let parts=fruits.slice(6);
+document.getElementById('slice2').innerHTML=parts;
+
+let name1="kartavya";
+let total=name1.toUpperCase();
+document.getElementById('upper').innerHTML=total;
+
+let name2="kano";
+let name3="patel";
+let name4=name2.concat("",name3);
+document.getElementById('concat').innerHTML=name4;
+
+let nam="kano patel";
+let nam2=nam.repeat(3);
+document.getElementById('repeat').innerHTML=nam2;
+
+let nam3="I love cats. Cats are very easy to love. Cats are very popular.";
+let nam4=nam3.replaceAll("Cats","DOGS");
+document.getElementById('replace').innerHTML=nam4;
+
+let nam5="I love cats. Cats are very easy to love. Cats are very popular.";
+const nam6=nam5.matchAll("love");
+document.getElementById('machAll').innerHTML=Array.from(nam6);
+
+let nam7="kano";
+let nam8="patel";
+let nam9=`welcome ${nam7}${nam8}`;
+document.getElementById('allsting').innerHTML=nam9;
+
+let fruities=["banana","chiku","kiwi"];
+document.getElementById('click').innerHTML=fruities;
+function youFunction(){
+	fruities.push("apple");
+	document.getElementById('click').innerHTML=fruities;
 }
 
-document.getElementById('demo').innerHTML="Total mark"+"-"+sum;
-console.log(sum)
-
-
-
-
-let mark=[85,66,78,65,77,65];
-let max= mark[0];
-
-for(let i=1;i<mark.length;i++){
-	if (mark[i]>max) {
-		max=mark[i];
+let x="";
+let obj={
+	cars:[{
+		name:"ford",models:["fiesta","focus","mustang"]
+	},{name:"xuv700",models:["Xuv300","thar","scorpio"]},
+	{name:"bmw",models:["500","320","x5"]}]
+}
+for (let i in obj.cars){
+	x+="<h2>"+obj.cars[i].name+"</h2>";
+	for(let j in obj.cars[i].models){
+		x+=obj.cars[i].models[j]+"<br>"
 	}
 }
-let avg= sum/ marks.length;
-document.getElementById('mark').innerHTML="maximum mark"+"-"+max;
-console.log(max)
-console.log(avg);
-
-let mar=[90,66,78,65,77,65];
-let maxvalue=Math.max(...mar);
-console.log(maxvalue);
-document.getElementById('maxmark').innerHTML=maxvalue;
-
-let kano="my name is kartavya";
-let result=kano.substr(kano.length-8);
-document.getElementById('string').innerHTML=result;
-console.log(result);
-
-let text="my,name,is,yash,test,test25";
-let myArry=text.split(",");
-console.log(myArry.length);
-document.getElementById('yash').innerHTML=myArry[myArry.length - 3];
-console.log(myArry[myArry.length - 3]);
-
-let a=12;
-let b=10
-
-console.log('a=',a,'&b=',b);
-a= a+1;
-b++;
-console.log('a=',a);
-console.log('b=',b);
-
-let c=15;
-let d=13;
-c=c-1;
-d--;
-console.log('c=',c);
-console.log('d=',d);
-
-
-let e=4;
-let f=9;
-
-e +=4; 
-f+=3;  
-console.log(e);
-document.getElementById('opearators').innerHTML=e;
-document.getElementById('assignment').innerHTML=f;
-console.log(f);
-
-let juice={chiku:40,banana:20,apple:50};
-let price="";
-for(let [juic,amount] of Object.entries(juice)){
-	price += juic+":"+amount+"<br>";
-
-}
-console.log(price);
-document.getElementById('juice').innerHTML=price;
-document.getElementById('juic').innerHTML=JSON.stringify(juice);
-
-let run={virat:25,rohit:40,subhaman:50,rahul:35};
-let runs= Object.values(run);
-console.log(runs);
-document.getElementById('match').innerHTML=runs
-
-let wife={virat:"anuska",rohit:"ritika",subhaman:"sara",rahul:"athiya"};
-let wifes= Object.values(wife);
-console.log(result);
-console.log(wifes);
-document.getElementById('wife').innerHTML=wifes;
-
-let criketer="virat";
-let criket=criketer.repeat(2);
-console.log(criket);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.getElementById('kp').innerHTML=x;
 
 
 

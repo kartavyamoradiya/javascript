@@ -1,52 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<style>
-    table,th,td {
-      border : 1px solid black;
-      border-collapse: collapse;
-    }
-    th,td {
-      padding: 5px;
-    }
-</style>
-    
 <body>
-    <h1>kartavya</h1>
-    <p>xml file</p>
-    <button type="button" onclick="loadDoc()">Get my CD collection</button>
-    <br><br>
-    <table id="demo"></table>
-    
-    <script>
-        function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-      myFunction(this);
-    }
-  };
-  xhttp.open("GET", "cd_catalog.xml", true);
-  xhttp.send();
-}
-function myFunction(xml) {
-  var i;
-  var xmlDoc = xml.responseXML;
-  var table="<tr><th>Artist</th><th>Title</th></tr>";
-  var x = xmlDoc.getElementsByTagName("CD");
-  for (i = 0; i <x.length; i++) { 
-    table += "<tr><td>" +
-    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-    "</td><td>" +
-    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "</td></tr>";
-  }
-  document.getElementById("demo").innerHTML = table;
-}
- </script>
+	<button onclick="getElementById('demo').innerHTML=Date()">The time is?</button>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<P id="demo3"></P>
+	<button onclick="Web()">Try it</button>
+	<P id="demo4">please visit microsoft!</P>
+	<p id="name"></p>
+	<p id="length"></p>
+	<p id="dubblecoma"></p>
+	<p id="multilinestring"></p>
+	<P id="returnindexelement"></P>
+	<p id="slice"></p>
+	<p id="slice2"></p>
+	<p id="upper"></p>
+	<p id="concat"></p>
+	<p id="repeat"></p>
+	<P id="replace"></P>
+	<p id="machAll"></p>
+	<p id="allsting"></p>
+	<button onclick="youFunction()">click me</button>
+	<p id="click"></p>
+	<p id="kp"></p>
+	<script src="js/script.js"></script>
 </body>
 </html>
